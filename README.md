@@ -1,10 +1,10 @@
 # Calculator
 
 live link (front-end):
-https://calculator-application-two.vercel.app/
+https://web-calculator-3f2u.vercel.app/login
 
 live link (backend):
-https://calculator-backend-rho.vercel.app/
+https://web-calculator-two.vercel.app/
 
 ## Tech Stack used:
 
