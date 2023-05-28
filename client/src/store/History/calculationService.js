@@ -2,15 +2,15 @@ import axios from 'axios'
 
 
 // const API_URL = 'http://localhost:5000/api/calculation'
-const API_URL = 'https://calculator-backend-rho.vercel.app/api/calculation'
+const API_URL = 'https://web-calculator-two.vercel.app/api/calculation'
 
 //addHistory
-const addCalculation = async ({calculation,authToken}) => {
+const addCalculation = async ({ calculation, authToken }) => {
     try {
         const config = {
             headers: {
-                "Content-Type": "application/json", 
-                authToken:authToken
+                "Content-Type": "application/json",
+                authToken: authToken
             }
         }
         const response = await axios.post(API_URL + "/addcalculation", calculation, config);
@@ -38,13 +38,13 @@ const getAllCalculations = async (authToken) => {
 }
 
 //delete all calculations
-const deleteCalculation = async({id, authToken}) =>{
+const deleteCalculation = async ({ id, authToken }) => {
     try {
         const config = {
             headers: {
                 "Content-Type": "application/json",
                 "authToken": authToken,
-                "calculationid":id
+                "calculationid": id
             }
         }
         console.log(config)
