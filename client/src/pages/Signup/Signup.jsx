@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from 'react-redux'
 import './Signup.css'
-import {  setErrorNull, signup } from '../../store/auth/authSlice'
+import { setErrorNull, signup } from '../../store/auth/authSlice'
 import { toast } from 'react-toastify'
 
 const Signup = () => {
@@ -42,8 +42,8 @@ const Signup = () => {
         <input onChange={onChangeHandler} className='signup-form-input' name='name' type='text' placeholder='Name' />
         <input onChange={onChangeHandler} className='signup-form-input' name='email' type='email' placeholder='email' />
         <input onChange={onChangeHandler} className='signup-form-input' name='password' type='password' placeholder='password' />
-        <button onClick={handleSubmit} type='submit' className='signup-form-submit-btn'> Login</button>
-        <p> have an account <Link to='/login'>Signup</Link> </p>
+        <button onClick={handleSubmit} type='submit' className='signup-form-submit-btn'> Signup</button>
+        <p> have an account <Link to='/login'>Login</Link> </p>
       </form>
     </div>
   )
